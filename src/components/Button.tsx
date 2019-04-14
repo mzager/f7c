@@ -18,7 +18,7 @@ const Button: React.SFC<IButtonProps> = props => (
   </button>
 );
 Button.defaultProps = {
-  children: null,
+  children: undefined,
   onClick: () => {}
 };
 export default Button;
