@@ -3,6 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://mzager.github.io/fredhutch/",
+  "author": "Michael Zager",
+  "description": "React Components Developed By The Fred Hutch Center For Interactive Data Visualization",
+  "keywords": [
+    "Data",
+    "Visualization",
+    "Bioinformatics",
+    "Web GL"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
