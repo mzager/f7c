@@ -4,13 +4,13 @@ export interface IButtonProps {
   onClick?: (e: any) => void;
 }
 const styles = {
+  backgroundColor: '#FFFFFF',
   border: '1px solid #eee',
   borderRadius: 3,
-  backgroundColor: '#FFFFFF',
   cursor: 'pointer',
   fontSize: 15,
+  margin: 10,
   padding: '3px 10px',
-  margin: 10
 };
 const Button: React.SFC<IButtonProps> = props => (
   <button onClick={props.onClick} style={styles} type="button">
@@ -19,6 +19,8 @@ const Button: React.SFC<IButtonProps> = props => (
 );
 Button.defaultProps = {
   children: undefined,
-  onClick: () => {}
+  onClick: () => {
+    alert('click');
+  },
 };
 export default Button;

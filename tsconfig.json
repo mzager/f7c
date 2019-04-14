@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "build/dist",
+    "outDir": "./lib",
+    "strict": true,
     "module": "commonjs",
     "declaration": true,
     "target": "es5",
@@ -20,6 +21,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true
   },
+  "include": ["src"],
   "exclude": [
     "node_modules",
     "build",

@@ -4,7 +4,7 @@ export class Geneset extends React.Component<{}, {}> {
   // constructor(props: Readonly<P>) {
   //   super(props);
   // }
-  render() {
+  public render() {
     return <h1>Hello world</h1>;
   }
 }
