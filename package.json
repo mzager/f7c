@@ -1,7 +1,7 @@
 {
   "name": "fredhutch",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://mzager.github.io/fredhutch/",
   "author": "Michael Zager",
   "description": "React Components Developed By The Fred Hutch Center For Interactive Data Visualization",
@@ -18,10 +18,11 @@
   ],
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "axios": "^0.18.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts-ts": "3.1.0",
-    "redux-thunk": "^2.3.0",
+    "redux-saga": "^1.0.2",
     "typeface-roboto": "0.0.54"
   },
   "scripts": {
@@ -38,35 +39,47 @@
     "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@storybook/addon-actions": "^5.0.6",
-    "@storybook/addon-info": "^5.0.6",
-    "@storybook/addon-knobs": "^5.0.6",
-    "@storybook/addon-links": "^5.0.6",
-    "@storybook/addons": "^5.0.6",
-    "@storybook/react": "^5.0.6",
+    "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-info": "^5.0.11",
+    "@storybook/addon-knobs": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
     "@storybook/storybook-deployer": "^2.8.1",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.4",
-    "@types/react": "^16.8.13",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^11.13.11",
+    "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
     "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
-    "jest": "^24.7.1",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "prettier": "^1.17.0",
-    "react-docgen-typescript-loader": "^3.1.0",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "storybook-addon-jsx": "^7.1.0",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.15.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.4.3",
+    "postversion": "git push && git push --tags",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
+    "prettier": "^1.17.1",
     "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "react-docgen-typescript-loader": "^3.1.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "storybook-addon-jsx": "^7.1.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5",
+    "version": "npm run format && git add -A src"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzager/f7c.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzager/f7c/issues"
   }
 }
